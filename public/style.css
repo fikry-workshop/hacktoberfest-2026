@@ -1,0 +1,35 @@
+:root{--latar:#F1F2F4;--tinta:#262626;--oranye:#EE6A2B;--oranye-tua:#A83F0C;--pudar:#5E5E5E;--putih:#fff;
+--display:"Bricolage Grotesque",system-ui,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--latar);color:var(--tinta);font:1.0625rem/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:62rem;margin:0 auto;padding:1.25rem clamp(1.25rem,5vw,3rem) 3rem}
+.atas{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.5rem;font-size:.9rem;color:var(--pudar)}
+h1{font:800 clamp(2.5rem,8.5vw,5.5rem)/.98 var(--display);letter-spacing:-.025em;max-width:16ch;margin:clamp(2.5rem,8vw,5rem) 0 1.75rem}
+h2{font:700 1.4rem/1.2 var(--display);margin:0 0 1rem}
+.url{display:flex;flex-wrap:wrap;align-items:baseline;border:3px solid var(--tinta);border-radius:999px;padding:.85rem 1.6rem;background:var(--putih);font:600 clamp(1rem,3.4vw,1.8rem)/1.25 var(--mono);overflow-wrap:anywhere}
+.url strong{font-weight:700}
+.url .skema{opacity:.55}
+.url.live{background:var(--oranye)}
+.url.live .skema{opacity:.7}
+.url.lokal{border-style:dashed}
+.url.http .skema{color:var(--oranye-tua);opacity:1}
+.ket{max-width:38rem;margin:1.25rem 0 0;font-size:1.15rem}
+.grid{display:grid;grid-template-columns:3fr 2fr;gap:2rem;margin:3.5rem 0}
+.cek{background:var(--tinta);color:var(--putih);padding:1.75rem;border-radius:.5rem}
+.cek ul{list-style:none;margin:0;padding:0}
+.cek li{display:grid;grid-template-columns:4.5rem 1fr;gap:.2rem 1rem;padding:.9rem 0;border-top:1px solid #ffffff2e}
+.cek li:first-child{border-top:0}
+.st{font-weight:700}
+.sudah .st{color:var(--oranye)}
+.hint{grid-column:2;margin:0;font-size:.95rem;color:#d4d4d4}
+dl{margin:0;display:grid;grid-template-columns:7.5rem 1fr;gap:.6rem 1rem}
+dt{color:var(--pudar)}
+dd{margin:0;overflow-wrap:anywhere}
+.gal{list-style:none;margin:0;padding:0}
+.gal li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1.5rem;padding:.85rem 0;border-top:1px solid #26262633}
+.gal small{color:var(--pudar)}
+.gal a{color:var(--oranye-tua);font-family:var(--mono);font-size:.9rem;overflow-wrap:anywhere}
+code{font-family:var(--mono);background:#26262614;padding:.1em .35em;border-radius:.25rem}
+a:focus-visible{outline:3px solid var(--oranye);outline-offset:3px}
+footer{margin-top:3rem;padding-top:1rem;border-top:3px solid var(--tinta);font-size:.9rem;color:var(--pudar)}
+@media(max-width:720px){.grid{grid-template-columns:1fr}dl{grid-template-columns:1fr;gap:.1rem}dt{margin-top:.6rem}}
